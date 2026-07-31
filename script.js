@@ -8,7 +8,6 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  // Smooth scroll and auto-close mobile menu on selection
   const navLinks = document.querySelectorAll('a[href^="#"]');
 
   navLinks.forEach((link) => {
