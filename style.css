@@ -117,7 +117,7 @@ h2 {
 .nav-links {
   display: flex;
   list-style: none;
-  gap: 24px;
+  gap: 20px;
 }
 
 .nav-links a {
@@ -125,7 +125,7 @@ h2 {
   text-decoration: none;
   font-weight: 700;
   text-transform: uppercase;
-  font-size: 0.8rem;
+  font-size: 0.75rem;
   letter-spacing: 1px;
   position: relative;
   padding: 4px 0;
@@ -338,6 +338,16 @@ h2 {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 24px;
+}
+
+.focus-grid {
+  display: flex;
+  justify-content: center;
+}
+
+.focus-card {
+  width: 100%;
+  max-width: 320px;
 }
 
 .card {
@@ -675,6 +685,16 @@ h2 {
   box-shadow: 0 4px 12px var(--gold-glow);
 }
 
+@media (max-width: 992px) {
+  .nav-links {
+    gap: 12px;
+  }
+  
+  .nav-links a {
+    font-size: 0.7rem;
+  }
+}
+
 @media (max-width: 768px) {
   .mobile-menu-btn {
     display: block;
@@ -693,7 +713,7 @@ h2 {
   }
 
   nav.active {
-    max-height: 400px;
+    max-height: 450px;
     transition: max-height 0.35s ease-in-out;
   }
 
@@ -702,6 +722,10 @@ h2 {
     padding: 24px;
     gap: 16px;
     text-align: center;
+  }
+
+  .nav-links a {
+    font-size: 0.85rem;
   }
 
   .hero-btns {
