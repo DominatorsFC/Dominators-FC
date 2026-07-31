@@ -1,0 +1,559 @@
+/* Core Reset & Mobile Responsiveness First */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  -webkit-tap-highlight-color: transparent;
+}
+
+:root {
+  --primary-gold: #ffb703;
+  --dark-bg: #121217;
+  --card-bg: #1a1a22;
+  --border-color: #2a2a35;
+  --text-gray: #a0a0a0;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #0b0b0e;
+  color: #f4f4f4;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+.section {
+  padding: 60px 0;
+  text-align: center;
+}
+
+.section-tag {
+  color: var(--primary-gold);
+  font-size: 0.75rem;
+  font-weight: 900;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  display: block;
+  margin-bottom: 6px;
+}
+
+h2 {
+  font-size: clamp(1.8rem, 5vw, 2.5rem);
+  font-weight: 900;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+  color: #ffffff;
+}
+
+.section-desc {
+  max-width: 700px;
+  margin: 0 auto 30px;
+  color: var(--text-gray);
+  font-size: 0.95rem;
+}
+
+.dark-bg {
+  background-color: var(--dark-bg);
+}
+
+/* Navbar */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: rgba(11, 11, 14, 0.95);
+  border-bottom: 2px solid var(--primary-gold);
+  z-index: 1000;
+  backdrop-filter: blur(10px);
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 12px 16px;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  gap: 10px;
+}
+
+.nav-logo {
+  height: 36px;
+  width: auto;
+  object-fit: contain;
+}
+
+.club-name {
+  font-size: 1.05rem;
+  font-weight: 900;
+  color: #fff;
+  letter-spacing: 1px;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: var(--primary-gold);
+}
+
+.mobile-menu-btn {
+  display: none;
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 1.4rem;
+  cursor: pointer;
+  padding: 5px;
+}
+
+/* Hero Section */
+.hero {
+  position: relative;
+  min-height: 100vh;
+  background: linear-gradient(rgba(11, 11, 14, 0.88), rgba(11, 11, 14, 0.95)), url('images/logo.jpg') center/cover no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 100px 16px 40px;
+}
+
+.hero-content {
+  max-width: 800px;
+  width: 100%;
+}
+
+.hero-content .badge {
+  background-color: rgba(255, 183, 3, 0.15);
+  color: var(--primary-gold);
+  border: 1px solid var(--primary-gold);
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: 900;
+  letter-spacing: 1px;
+}
+
+.hero-content h1 {
+  font-size: clamp(2.2rem, 8vw, 3.8rem);
+  font-weight: 900;
+  letter-spacing: 1px;
+  margin-top: 15px;
+  line-height: 1.15;
+}
+
+.hero-content .highlight {
+  color: var(--primary-gold);
+}
+
+.hero-content p {
+  font-size: clamp(0.95rem, 3vw, 1.2rem);
+  color: var(--text-gray);
+  margin: 16px 0 28px;
+}
+
+.hero-btns {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.btn {
+  display: inline-block;
+  background-color: var(--primary-gold);
+  color: #000;
+  padding: 12px 26px;
+  font-weight: 900;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-radius: 30px;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+  border: 2px solid var(--primary-gold);
+}
+
+.btn:hover {
+  background-color: #e0a100;
+  transform: translateY(-2px);
+}
+
+.btn-outline {
+  background: transparent;
+  color: #fff;
+}
+
+.btn-outline:hover {
+  background-color: var(--primary-gold);
+  color: #000;
+}
+
+/* Tournament Poster Section */
+.tournament-poster-card {
+  max-width: 500px;
+  margin: 0 auto;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 2px solid var(--primary-gold);
+  box-shadow: 0 8px 25px rgba(255, 183, 3, 0.15);
+}
+
+.tournament-img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Manager Cards */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background-color: var(--card-bg);
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid var(--border-color);
+  transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  border-color: var(--primary-gold);
+}
+
+.img-container {
+  aspect-ratio: 4/5;
+  width: 100%;
+  background-color: #121217;
+  overflow: hidden;
+}
+
+.manager-photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card-info {
+  padding: 16px;
+  position: relative;
+  text-align: left;
+}
+
+.card-info h3 {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-top: 4px;
+}
+
+.card-info .title {
+  color: var(--text-gray);
+  font-size: 0.8rem;
+}
+
+.role-badge {
+  position: absolute;
+  top: -12px;
+  right: 12px;
+  background-color: var(--primary-gold);
+  color: #000;
+  font-weight: 900;
+  font-size: 0.65rem;
+  padding: 2px 8px;
+  border-radius: 8px;
+  text-transform: uppercase;
+}
+
+/* Match Gallery */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 12px;
+}
+
+.gallery-item {
+  aspect-ratio: 16/11;
+  background-color: var(--card-bg);
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid var(--border-color);
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Upgraded Footer Section */
+.footer {
+  background-color: #07070a;
+  border-top: 2px solid var(--border-color);
+  padding: 60px 16px 20px;
+  position: relative;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr;
+  gap: 40px;
+  padding-bottom: 40px;
+}
+
+.footer-col h4 {
+  color: var(--primary-gold);
+  font-size: 0.9rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  margin-bottom: 20px;
+}
+
+/* Brand Column */
+.footer-brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.footer-logo {
+  height: 42px;
+  width: auto;
+  object-fit: contain;
+}
+
+.footer-brand h3 {
+  font-size: 1.25rem;
+  font-weight: 900;
+  color: #ffffff;
+  letter-spacing: 1px;
+}
+
+.footer-tagline {
+  color: var(--text-gray);
+  font-size: 0.85rem;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.social-links {
+  display: flex;
+  gap: 12px;
+}
+
+.social-icon {
+  width: 40px;
+  height: 40px;
+  background-color: var(--card-bg);
+  color: #ffffff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  border: 1px solid var(--border-color);
+  transition: all 0.3s ease;
+}
+
+.social-icon:hover {
+  background-color: var(--primary-gold);
+  color: #000000;
+  border-color: var(--primary-gold);
+  transform: translateY(-3px);
+}
+
+/* Navigation Links Column */
+.links-col ul {
+  list-style: none;
+  padding: 0;
+}
+
+.links-col ul li {
+  margin-bottom: 10px;
+}
+
+.links-col ul li a {
+  color: var(--text-gray);
+  text-decoration: none;
+  font-size: 0.85rem;
+  font-weight: 700;
+  transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.links-col ul li a i {
+  font-size: 0.65rem;
+  color: var(--primary-gold);
+  transition: transform 0.3s ease;
+}
+
+.links-col ul li a:hover {
+  color: #ffffff;
+}
+
+.links-col ul li a:hover i {
+  transform: translateX(4px);
+}
+
+/* Info Column */
+.info-list {
+  list-style: none;
+  padding: 0;
+}
+
+.info-list li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: var(--text-gray);
+  font-size: 0.85rem;
+  margin-bottom: 12px;
+}
+
+.info-list li i {
+  color: var(--primary-gold);
+  font-size: 1rem;
+  width: 18px;
+  text-align: center;
+}
+
+/* Footer Bottom Bar */
+.footer-bottom {
+  max-width: 1200px;
+  margin: 0 auto;
+  border-top: 1px solid var(--border-color);
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--text-gray);
+  font-size: 0.75rem;
+}
+
+.back-to-top {
+  width: 36px;
+  height: 36px;
+  background-color: var(--card-bg);
+  color: var(--primary-gold);
+  border: 1px solid var(--border-color);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.back-to-top:hover {
+  background-color: var(--primary-gold);
+  color: #000000;
+  transform: translateY(-3px);
+}
+
+/* Dedicated Mobile Tweaks */
+@media (max-width: 768px) {
+  .mobile-menu-btn {
+    display: block;
+  }
+
+  nav {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: rgba(11, 11, 14, 0.98);
+    border-bottom: 2px solid var(--primary-gold);
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out;
+  }
+
+  nav.active {
+    max-height: 300px;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    padding: 20px;
+    gap: 14px;
+    text-align: center;
+  }
+
+  .hero-btns {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .btn {
+    width: 100%;
+  }
+
+  .card-grid {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+
+  .footer-container {
+    grid-template-columns: 1fr;
+    gap: 30px;
+    text-align: center;
+  }
+
+  .footer-brand {
+    justify-content: center;
+  }
+
+  .social-links {
+    justify-content: center;
+  }
+
+  .links-col ul li a {
+    justify-content: center;
+  }
+
+  .info-list li {
+    justify-content: center;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    gap: 12px;
+  }
+}
