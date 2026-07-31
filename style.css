@@ -233,10 +233,10 @@ h2 {
   display: block;
 }
 
-/* Manager Cards */
+/* Cards (Management & Players) */
 .card-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 20px;
 }
 
@@ -297,6 +297,11 @@ h2 {
   text-transform: uppercase;
 }
 
+.player-badge {
+  background-color: #ffffff;
+  color: #000000;
+}
+
 /* Match Gallery */
 .gallery-grid {
   display: grid;
@@ -318,7 +323,7 @@ h2 {
   object-fit: cover;
 }
 
-/* Upgraded Footer Section */
+/* Footer Section */
 .footer {
   background-color: #07070a;
   border-top: 2px solid var(--border-color);
@@ -507,7 +512,7 @@ h2 {
   }
 
   nav.active {
-    max-height: 300px;
+    max-height: 350px;
   }
 
   .nav-links {
@@ -527,7 +532,7 @@ h2 {
   }
 
   .card-grid {
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
   }
 
   .footer-container {
