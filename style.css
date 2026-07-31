@@ -171,7 +171,7 @@ h2 {
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding: 130px 20px 60px;
+  padding: 120px 20px 60px;
 }
 
 .hero-overlay {
@@ -180,39 +180,49 @@ h2 {
   left: 0;
   width: 100%;
   height: 100%;
-  background: radial-gradient(circle, rgba(9, 9, 12, 0.8) 0%, rgba(9, 9, 12, 0.98) 100%);
+  background: radial-gradient(circle, rgba(9, 9, 12, 0.82) 0%, rgba(9, 9, 12, 0.98) 100%);
   z-index: 1;
 }
 
 .hero-content {
   position: relative;
   z-index: 2;
-  max-width: 850px;
+  max-width: 800px;
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.hero-content .badge {
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  background-color: rgba(255, 183, 3, 0.1);
-  color: var(--primary-gold);
-  border: 1px solid var(--primary-gold);
-  padding: 6px 18px;
-  border-radius: 20px;
-  font-size: 0.75rem;
-  font-weight: 900;
-  letter-spacing: 1.5px;
-  box-shadow: 0 0 20px var(--gold-glow);
+.hero-logo {
+  width: 140px;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid var(--primary-gold);
+  box-shadow: 0 0 30px var(--gold-glow);
+  margin-bottom: 24px;
+  animation: pulseLogo 3s infinite ease-in-out;
+}
+
+@keyframes pulseLogo {
+  0%, 100% {
+    box-shadow: 0 0 25px var(--gold-glow);
+    transform: scale(1);
+  }
+  50% {
+    box-shadow: 0 0 45px rgba(255, 183, 3, 0.7);
+    transform: scale(1.03);
+  }
 }
 
 .hero-content h1 {
-  font-size: clamp(2.4rem, 8vw, 4.2rem);
+  font-size: clamp(2.5rem, 8vw, 4.5rem);
   font-weight: 900;
-  letter-spacing: 1.5px;
-  margin-top: 18px;
+  letter-spacing: 2px;
   line-height: 1.1;
   text-transform: uppercase;
+  margin-bottom: 12px;
 }
 
 .highlight-text {
@@ -224,8 +234,9 @@ h2 {
 .hero-content p {
   font-size: clamp(1rem, 3vw, 1.25rem);
   color: #d0d0d0;
-  margin: 18px 0 32px;
+  margin-bottom: 36px;
   font-weight: 400;
+  max-width: 600px;
 }
 
 .hero-btns {
@@ -233,7 +244,6 @@ h2 {
   gap: 16px;
   justify-content: center;
   flex-wrap: wrap;
-  margin-bottom: 40px;
 }
 
 .btn {
@@ -270,46 +280,6 @@ h2 {
 .btn-outline:hover {
   background-color: var(--primary-gold);
   color: #000;
-}
-
-.hero-stats {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 24px;
-  background: rgba(26, 26, 34, 0.6);
-  border: 1px solid var(--border-color);
-  padding: 16px 28px;
-  border-radius: 50px;
-  max-width: 600px;
-  margin: 0 auto;
-  backdrop-filter: blur(10px);
-}
-
-.stat-box {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.stat-number {
-  font-size: 1.25rem;
-  font-weight: 900;
-  color: var(--primary-gold);
-}
-
-.stat-label {
-  font-size: 0.7rem;
-  color: var(--text-gray);
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  font-weight: 700;
-}
-
-.stat-divider {
-  width: 1px;
-  height: 25px;
-  background-color: var(--border-color);
 }
 
 .tournament-poster-card {
@@ -736,17 +706,6 @@ h2 {
   .btn {
     width: 100%;
     justify-content: center;
-  }
-
-  .hero-stats {
-    flex-direction: column;
-    gap: 12px;
-    border-radius: 20px;
-  }
-
-  .stat-divider {
-    width: 80%;
-    height: 1px;
   }
 
   .card-grid {
