@@ -1,29 +1,4 @@
 document.addEventListener("DOMContentLoaded", () => {
-  const mobileMenuBtn = document.getElementById("mobile-menu-btn");
-  const navMenu = document.getElementById("nav-menu");
-
-  if (mobileMenuBtn && navMenu) {
-    mobileMenuBtn.addEventListener("click", () => {
-      navMenu.classList.toggle("open");
-      const icon = mobileMenuBtn.querySelector("i");
-      if (icon) {
-        icon.classList.toggle("fa-bars");
-        icon.classList.toggle("fa-xmark");
-      }
-    });
-
-    document.querySelectorAll(".nav-item").forEach((item) => {
-      item.addEventListener("click", () => {
-        navMenu.classList.remove("open");
-        const icon = mobileMenuBtn.querySelector("i");
-        if (icon) {
-          icon.classList.add("fa-bars");
-          icon.classList.remove("fa-xmark");
-        }
-      });
-    });
-  }
-
   const navbar = document.getElementById("navbar");
   window.addEventListener("scroll", () => {
     if (window.scrollY > 50) {
@@ -71,7 +46,6 @@ document.addEventListener("DOMContentLoaded", () => {
       lightbox.classList.remove("active");
     };
 
-    lightboxClose.device && lightboxClose.addEventListener("click", closeLightbox);
     lightboxClose.addEventListener("click", closeLightbox);
     lightbox.addEventListener("click", (e) => {
       if (e.target === lightbox) {
