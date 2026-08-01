@@ -172,7 +172,6 @@ ul, ol {
   width: 100%;
 }
 
-/* Mobile Menu Toggle Button */
 .mobile-menu-btn {
   display: none;
   background: none;
@@ -410,22 +409,26 @@ ul, ol {
   background-color: #050811;
   overflow: hidden;
   position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .player-grid .img-container {
-  height: 180px;
+  height: 220px;
 }
 
 .manager-photo {
   width: 100%;
   height: 100%;
-  object-fit: cover;
-  object-position: top center;
+  object-fit: contain;
+  object-position: center center;
   transition: transform 0.5s ease;
+  background-color: #050811;
 }
 
 .card:hover .manager-photo {
-  transform: scale(1.05);
+  transform: scale(1.03);
 }
 
 .fit-contain {
@@ -751,7 +754,6 @@ ul, ol {
   color: var(--text-muted);
 }
 
-/* --- Responsive Navigation Adaptation --- */
 @media (max-width: 1024px) {
   .mobile-menu-btn {
     display: block;
@@ -804,7 +806,7 @@ ul, ol {
   }
 
   .player-grid .img-container {
-    height: 130px;
+    height: 150px;
   }
 
   .player-grid .card-info {
