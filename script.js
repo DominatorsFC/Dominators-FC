@@ -1,60 +1,64 @@
-document.addEventListener("DOMContentLoaded", () => {
-  const navbar = document.getElementById("navbar");
-  window.addEventListener("scroll", () => {
-    if (window.scrollY > 50) {
-      navbar.classList.add("scrolled");
-    } else {
-      navbar.classList.remove("scrolled");
-    }
-  });
+document.addEventListener('DOMContentLoaded', () => {
+ 
+  const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+  const navMenu = document.getElementById('nav-menu');
+  const navItems = document.querySelectorAll('.nav-item');
 
-  const sections = document.querySelectorAll("section[id]");
-  const navLinks = document.querySelectorAll(".nav-item");
-
-  window.addEventListener("scroll", () => {
-    let current = "";
-    sections.forEach((section) => {
-      const sectionTop = section.offsetTop - 100;
-      const sectionHeight = section.offsetHeight;
-      if (window.scrollY >= sectionTop && window.scrollY < sectionTop + sectionHeight) {
-        current = section.getAttribute("id");
+  if (mobileMenuBtn && navMenu) {
+    mobileMenuBtn.addEventListener('click', () => {
+      navMenu.classList.toggle('active');
+      const icon = mobileMenuBtn.querySelector('i');
+      if (navMenu.classList.contains('active')) {
+        icon.classList.remove('fa-bars');
+        icon.classList.add('fa-xmark');
+      } else {
+        icon.classList.remove('fa-xmark');
+        icon.classList.add('fa-bars');
       }
     });
 
-    navLinks.forEach((link) => {
-      link.classList.remove("active");
-      if (link.getAttribute("href") === `#${current}`) {
-        link.classList.add("active");
-      }
-    });
-  });
-
-  const lightbox = document.getElementById("lightbox");
-  const lightboxImg = document.getElementById("lightbox-img");
-  const lightboxClose = document.getElementById("lightbox-close");
-  const galleryItems = document.querySelectorAll(".gallery-item img");
-
-  if (lightbox && lightboxImg && lightboxClose) {
-    galleryItems.forEach((img) => {
-      img.addEventListener("click", () => {
-        lightbox.classList.add("active");
-        lightboxImg.src = img.src;
+    
+    navItems.forEach(item => {
+      item.addEventListener('click', () => {
+        navMenu.classList.remove('active');
+        const icon = mobileMenuBtn.querySelector('i');
+        if (icon) {
+          icon.classList.remove('fa-xmark');
+          icon.classList.add('fa-bars');
+        }
       });
+    });
+  }
+
+
+  const galleryItems = document.querySelectorAll('.gallery-item');
+  const lightbox = document.getElementById('lightbox');
+  const lightboxImg = document.getElementById('lightbox-img');
+  const lightboxClose = document.getElementById('lightbox-close');
+
+  if (galleryItems.length && lightbox && lightboxImg) {
+    galleryItems.forEach(item => {
+      const img = item.querySelector('img');
+      if (img) {
+        item.addEventListener('click', () => {
+          lightbox.classList.add('active');
+          lightboxImg.src = img.src;
+          lightboxImg.alt = img.alt;
+        });
+      }
     });
 
     const closeLightbox = () => {
-      lightbox.classList.remove("active");
+      lightbox.classList.remove('active');
+      lightboxImg.src = '';
     };
 
-    lightboxClose.addEventListener("click", closeLightbox);
-    lightbox.addEventListener("click", (e) => {
-      if (e.target === lightbox) {
-        closeLightbox();
-      }
-    });
+    if (lightboxClose) {
+      lightboxClose.addEventListener('click', closeLightbox);
+    }
 
-    document.addEventListener("keydown", (e) => {
-      if (e.key === "Escape") {
+    lightbox.addEventListener('click', (e) => {
+      if (e.target === lightbox) {
         closeLightbox();
       }
     });
