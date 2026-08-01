@@ -1,5 +1,4 @@
 document.addEventListener("DOMContentLoaded", () => {
-  // Mobile Menu Toggle
   const mobileMenuBtn = document.getElementById("mobile-menu-btn");
   const navMenu = document.getElementById("nav-menu");
 
@@ -13,7 +12,6 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     });
 
-    // Close mobile menu when clicking a nav item
     document.querySelectorAll(".nav-item").forEach((item) => {
       item.addEventListener("click", () => {
         navMenu.classList.remove("open");
@@ -26,7 +24,6 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  // Navbar Scroll Effect
   const navbar = document.getElementById("navbar");
   window.addEventListener("scroll", () => {
     if (window.scrollY > 50) {
@@ -36,7 +33,6 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 
-  // Active Nav Link Highlighting on Scroll
   const sections = document.querySelectorAll("section[id]");
   const navLinks = document.querySelectorAll(".nav-item");
 
@@ -58,7 +54,6 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-  // Lightbox Functionality for Gallery
   const lightbox = document.getElementById("lightbox");
   const lightboxImg = document.getElementById("lightbox-img");
   const lightboxClose = document.getElementById("lightbox-close");
@@ -76,6 +71,7 @@ document.addEventListener("DOMContentLoaded", () => {
       lightbox.classList.remove("active");
     };
 
+    lightboxClose.device && lightboxClose.addEventListener("click", closeLightbox);
     lightboxClose.addEventListener("click", closeLightbox);
     lightbox.addEventListener("click", (e) => {
       if (e.target === lightbox) {
