@@ -15,20 +15,47 @@ Welcome to the official web portal for **Dominators FC**. Built with responsive 
 ## 📁 Repository Structure
 
 ```text
-Dominators FC/
+Dominators-FC/
 │
-├── index.html                           # Main Landing Page
-├── style.css                            # Global Styles, Animations & Mobile Responsiveness
-├── script.js                            # Interactive UI Scripts (Navbar, Lightbox, Scroll Sync)
-└── images/                              # Asset Directory
-    ├── logo.jpg                         # Official Club Logo
-    ├── founder1_MohammadTahamidChowdhury (1).jpg
+├── index.html
+├── script.js
+├── style.css
+└── images/
+    ├── aimon.jpg
+    ├── araf.jpg
+    ├── arafjr.jpg
+    ├── arefin.jpg
+    ├── arman.jpg
+    ├── ashraful.jpg
+    ├── asif.jpg
+    ├── committee.jpg
+    ├── FocusFunction_ShadmanSharif.jpg
+    ├── forhan.jpg
+    ├── founder1_MohammadTahamidPchowdhury.jpg
     ├── founder2_TousifMostafaSaif.jpg
     ├── founder3_MdFarhanSadikAlam.jpg
-    ├── Focus & Function_ShadmanSharif.jpg
+    ├── gallery1.jpg
+    ├── gallery2.jpg
+    ├── gallery3.jpg
+    ├── gallery4.jpg
+    ├── imran.jpg
+    ├── jawad.jpg
+    ├── kawsar.jpg
+    ├── kits.jpg
+    ├── legendaryPlayers.jpg
+    ├── logo.jpg
+    ├── nill.jpg
+    ├── rafid.jpg
+    ├── rafsan.jpg
+    ├── raihan.jpg
+    ├── sabbir.jpg
+    ├── shefat.jpg
+    ├── shihab.jpg
+    ├── taisir.jpg
+    ├── tanzim.jpg
     ├── Team_A_Manager_MohammaedZiaUddin.jpg
     ├── Team_B_Manager_FarhanSadik.jpg
     ├── Team_C_Manager_MohammadZiaurRahman.jpg
     ├── Team_D_Manager_MohammadEtihad.jpg
     ├── uptournament.jpg
-    └── [player & gallery assets]
+    └── volunteers.jpg
