@@ -265,8 +265,10 @@ ul, ol {
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 }
 
+/* Professional & Balanced Grid for Featured Players */
 .player-grid {
-  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 18px;
 }
 
 .card {
@@ -289,6 +291,11 @@ ul, ol {
   background-color: #050811;
   overflow: hidden;
   position: relative;
+}
+
+/* Specific Height Reduction for Player Images to make them compact and neat */
+.player-grid .img-container {
+  height: 180px;
 }
 
 .manager-photo {
@@ -316,6 +323,11 @@ ul, ol {
   text-align: center;
 }
 
+/* Compact padding for player card info */
+.player-grid .card-info {
+  padding: 12px 10px;
+}
+
 .role-badge {
   display: inline-block;
   padding: 4px 12px;
@@ -326,6 +338,12 @@ ul, ol {
   font-weight: 700;
   text-transform: uppercase;
   margin-bottom: 10px;
+}
+
+.player-grid .role-badge {
+  padding: 2px 8px;
+  font-size: 0.65rem;
+  margin-bottom: 6px;
 }
 
 .player-badge {
@@ -339,9 +357,18 @@ ul, ol {
   margin-bottom: 5px;
 }
 
+.player-grid .card-info h3 {
+  font-size: 0.95rem;
+  margin-bottom: 3px;
+}
+
 .card-info .title {
   color: var(--text-muted);
   font-size: 0.85rem;
+}
+
+.player-grid .card-info .title {
+  font-size: 0.75rem;
 }
 
 .single-card-wrapper {
@@ -684,6 +711,34 @@ ul, ol {
   .nav-links {
     flex-direction: column;
     gap: 15px;
+  }
+
+  /* Force exactly 2 columns on mobile screens for Featured Players */
+  .player-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 10px;
+  }
+
+  .player-grid .img-container {
+    height: 130px;
+  }
+
+  .player-grid .card-info {
+    padding: 8px 6px;
+  }
+
+  .player-grid .card-info h3 {
+    font-size: 0.85rem;
+  }
+
+  .player-grid .card-info .title {
+    font-size: 0.65rem;
+  }
+
+  .player-grid .role-badge {
+    font-size: 0.6rem;
+    padding: 2px 6px;
+    margin-bottom: 4px;
   }
 
   .hero h1 {
