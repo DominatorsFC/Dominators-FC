@@ -49,30 +49,7 @@
       "https://www.instagram.com/dominators_.f.c"
     ]
   }
-  </script>
 
-  <script type="module">
-    import { initializeApp } from "firebase/app";
-    import { getAnalytics } from "firebase/analytics";
-    import { getFirestore, doc, setDoc, getDoc } from "firebase/firestore";
-
-    const firebaseConfig = {
-      apiKey: "AIzaSyAWqKWXbsBjmHb-mlVlK8V-1DJdNM-9v0U",
-      authDomain: "dominators-fc.firebaseapp.com",
-      projectId: "dominators-fc",
-      storageBucket: "dominators-fc.firebasestorage.app",
-      messagingSenderId: "782717927263",
-      appId: "1:782717927263:web:0c34e2e402e5e363f780ea",
-      measurementId: "G-RHQ2F7GTY5"
-    };
-
-    const app = initializeApp(firebaseConfig);
-    const analytics = getAnalytics(app);
-    const db = getFirestore(app);
-
-    window.db = db;
-    window.firebaseFirestoreModules = { doc, setDoc, getDoc };
-  </script>
 </head>
 <body>
 
