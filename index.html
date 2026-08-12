@@ -51,31 +51,27 @@
   }
   </script>
 
-
   <!-- Firebase App SDK -->
-<script type="module">
-  import { initializeApp } from "https://www.gstatic.com/firebasejs/12.17.1/firebase-app.js";
-  import { getFirestore, doc, setDoc, getDoc } from "https://www.gstatic.com/firebasejs/12.17.1/firebase-firestore.js";
+  <script type="module">
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/12.17.1/firebase-app.js";
+    import { getFirestore, doc, setDoc, getDoc } from "https://www.gstatic.com/firebasejs/12.17.1/firebase-firestore.js";
 
-  const firebaseConfig = {
-    apiKey: "AIzaSyAWQKWxsBjmbH-mlVLK8V-1DJdnM-9V0U",
-    authDomain: "dominators-fc.firebaseapp.com",
-    projectId: "dominators-fc",
-    storageBucket: "dominators-fc.firebasestorage.app",
-    messagingSenderId: "782717927263",
-    appId: "1:782717927263:web:0c34e2e402e5e363f780ea",
-    measurementId: "G-RHQ2F7GTY5"
-  };
+    const firebaseConfig = {
+      apiKey: "AIzaSyAWQKWxsBjmbH-mlVLK8V-1DJdnM-9V0U",
+      authDomain: "dominators-fc.firebaseapp.com",
+      projectId: "dominators-fc",
+      storageBucket: "dominators-fc.firebasestorage.app",
+      messagingSenderId: "782717927263",
+      appId: "1:782717927263:web:0c34e2e402e5e363f780ea",
+      measurementId: "G-RHQ2F7GTY5"
+    };
 
-  const app = initializeApp(firebaseConfig);
-  const db = getFirestore(app);
+    const app = initializeApp(firebaseConfig);
+    const db = getFirestore(app);
 
-  // গ্লোবালি ব্যবহারের জন্য উইন্ডোতে যুক্ত করা হলো
-  window.db = db;
-  window.firebaseFirestoreModules = { doc, setDoc, getDoc };
-</script>
-
-
+    window.db = db;
+    window.firebaseFirestoreModules = { doc, setDoc, getDoc };
+  </script>
 </head>
 <body>
 
@@ -96,11 +92,9 @@
           <li><a href="#hero" class="nav-item active">Home</a></li>
           <li><a href="#about" class="nav-item">About</a></li>
           <li><a href="#founders" class="nav-item">Founders</a></li>
-
           <li><a href="#legendary-players" class="nav-item">Legends</a></li>
           <li><a href="#champions" class="nav-item">Champions</a></li>
           <li><a href="#tournament-awards" class="nav-item">Awards</a></li>
-        
           <li><a href="#management" class="nav-item">Management</a></li>
           <li><a href="#players" class="nav-item">Players</a></li>
           <li><a href="#volunteers" class="nav-item">Volunteers</a></li>
@@ -612,201 +606,192 @@
       </div>
     </section>
 
-   
-
-
-
-
-
-<section id="tournament-awards" class="section dark-bg">
-  <div class="container">
-    <div class="section-header">
-      <span class="section-tag">INDIVIDUAL HONORS</span>
-      <h2>Tournament Awards & Honors</h2>
-      <p class="section-desc">
-        Recognizing the standout individual brilliance and exceptional performances across our tournament seasons.
-      </p>
-    </div>
-
-    <!-- Unified 3-Column Grid for All Cards with Full Picture Display -->
-    <div class="card-grid col-3">
-      
-      <!-- 1. Champion Manager -->
-      <div class="card champion-card">
-        <div class="champion-badge-top">
-          <i class="fa-solid fa-award"></i>
-          <span>Champion Manager</span>
+    <section id="tournament-awards" class="section dark-bg">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">INDIVIDUAL HONORS</span>
+          <h2>Tournament Awards & Honors</h2>
+          <p class="section-desc">
+            Recognizing the standout individual brilliance and exceptional performances across our tournament seasons.
+          </p>
         </div>
-        <div class="img-container champion-img-container gallery-item" style="overflow: hidden; background: #000;">
-          <img src="images/ChampionManager.jpg" alt="Tournament Champion Manager" loading="lazy" style="width: 100%; height: 100%; object-fit: contain;">
-          <div class="gallery-overlay"><i class="fa-solid fa-expand"></i></div>
-        </div>
-        <div class="card-info">
-          <span class="role-badge">Champion Manager</span>
-          <h3>Tournament Champion Manager</h3>
-          <p class="title">Leading the charge to victory</p>
+
+        <!-- Unified 3-Column Grid for All Cards with Full Picture Display -->
+        <div class="card-grid col-3">
+          
+          <!-- 1. Champion Manager -->
+          <div class="card champion-card">
+            <div class="champion-badge-top">
+              <i class="fa-solid fa-award"></i>
+              <span>Champion Manager</span>
+            </div>
+            <div class="img-container champion-img-container gallery-item" style="overflow: hidden; background: #000;">
+              <img src="images/ChampionManager.jpg" alt="Tournament Champion Manager" loading="lazy" style="width: 100%; height: 100%; object-fit: contain;">
+              <div class="gallery-overlay"><i class="fa-solid fa-expand"></i></div>
+            </div>
+            <div class="card-info">
+              <span class="role-badge">Champion Manager</span>
+              <h3>Tournament Champion Manager</h3>
+              <p class="title">Leading the charge to victory</p>
+            </div>
+          </div>
+
+          <!-- 2. Runner Up Manager -->
+          <div class="card champion-card">
+            <div class="champion-badge-top">
+              <i class="fa-solid fa-award"></i>
+              <span>Runner Up Manager</span>
+            </div>
+            <div class="img-container champion-img-container gallery-item" style="overflow: hidden; background: #000;">
+              <img src="images/RunnerUpManager.jpg" alt="Tournament Runner Up Manager" loading="lazy" style="width: 100%; height: 100%; object-fit: contain;">
+              <div class="gallery-overlay"><i class="fa-solid fa-expand"></i></div>
+            </div>
+            <div class="card-info">
+              <span class="role-badge">Runner Up Manager</span>
+              <h3>Tournament Runner Up Manager</h3>
+              <p class="title">Closest to Victory</p>
+            </div>
+          </div>
+
+          <!-- 3. Passing Football Manager -->
+          <div class="card champion-card">
+            <div class="champion-badge-top">
+              <i class="fa-solid fa-award"></i>
+              <span>Passing Football Manager</span>
+            </div>
+            <div class="img-container champion-img-container gallery-item" style="overflow: hidden; background: #000;">
+              <img src="images/PassingFootballManager.jpg" alt="Tournament Passing Football Manager" loading="lazy" style="width: 100%; height: 100%; object-fit: contain;">
+              <div class="gallery-overlay"><i class="fa-solid fa-expand"></i></div>
+            </div>
+            <div class="card-info">
+              <span class="role-badge">Passing Football Manager</span>
+              <h3>Tournament Passing Football Manager</h3>
+              <p class="title">Master of the Pass</p>
+            </div>
+          </div>
+
+          <!-- 4. Silent Manager -->
+          <div class="card champion-card">
+            <div class="champion-badge-top">
+              <i class="fa-solid fa-award"></i>
+              <span>Silent Manager</span>
+            </div>
+            <div class="img-container champion-img-container gallery-item" style="overflow: hidden; background: #000;">
+              <img src="images/SilentManager.jpg" alt="Tournament Silent Manager" loading="lazy" style="width: 100%; height: 100%; object-fit: contain;">
+              <div class="gallery-overlay"><i class="fa-solid fa-expand"></i></div>
+            </div>
+            <div class="card-info">
+              <span class="role-badge">Silent Manager</span>
+              <h3>Tournament Silent Manager</h3>
+              <p class="title">Unseen Strength</p>
+            </div>
+          </div>
+
+          <!-- 5. Best Captain -->
+          <div class="card champion-card">
+            <div class="champion-badge-top">
+              <i class="fa-solid fa-award"></i>
+              <span>Best Captain</span>
+            </div>
+            <div class="img-container champion-img-container gallery-item" style="overflow: hidden; background: #000;">
+              <img src="images/BestCaptain.jpg" alt="Tournament Best Captain - Aimon" loading="lazy" style="width: 100%; height: 100%; object-fit: contain;">
+              <div class="gallery-overlay"><i class="fa-solid fa-expand"></i></div>
+            </div>
+            <div class="card-info">
+              <span class="role-badge">Best Captain</span>
+              <h3>Tournament Best Captain</h3>
+              <p class="title">Aimon</p>
+            </div>
+          </div>
+
+          <!-- 6. Best Player -->
+          <div class="card champion-card">
+            <div class="champion-badge-top">
+              <i class="fa-solid fa-award"></i>
+              <span>Best Player</span>
+            </div>
+            <div class="img-container champion-img-container gallery-item" style="overflow: hidden; background: #000;">
+              <img src="images/bestPlayer.jpg" alt="Tournament Best Player" loading="lazy" style="width: 100%; height: 100%; object-fit: contain;">
+              <div class="gallery-overlay"><i class="fa-solid fa-expand"></i></div>
+            </div>
+            <div class="card-info">
+              <span class="role-badge">Best Player</span>
+              <h3>Tournament Best Player</h3>
+              <p class="title">Elite Performance</p>
+            </div>
+          </div>
+
+          <!-- 7. Best Defender -->
+          <div class="card champion-card">
+            <div class="champion-badge-top">
+              <i class="fa-solid fa-award"></i>
+              <span>Best Defender</span>
+            </div>
+            <div class="img-container champion-img-container gallery-item" style="overflow: hidden; background: #000;">
+              <img src="images/BestDefender.jpg" alt="Tournament Best Defender" loading="lazy" style="width: 100%; height: 100%; object-fit: contain;">
+              <div class="gallery-overlay"><i class="fa-solid fa-expand"></i></div>
+            </div>
+            <div class="card-info">
+              <span class="role-badge">Best Defender</span>
+              <h3>Tournament Best Defender</h3>
+              <p class="title">Defensive Wall</p>
+            </div>
+          </div>
+
+          <!-- 8. Best Young Player -->
+          <div class="card champion-card">
+            <div class="champion-badge-top">
+              <i class="fa-solid fa-award"></i>
+              <span>Best Young Player</span>
+            </div>
+            <div class="img-container champion-img-container gallery-item" style="overflow: hidden; background: #000;">
+              <img src="images/BestYoungPlayer.jpg" alt="Tournament Best Young Player" loading="lazy" style="width: 100%; height: 100%; object-fit: contain;">
+              <div class="gallery-overlay"><i class="fa-solid fa-expand"></i></div>
+            </div>
+            <div class="card-info">
+              <span class="role-badge">Young Star</span>
+              <h3>Best Young Player</h3>
+              <p class="title">Rising Talent</p>
+            </div>
+          </div>
+
+          <!-- 9. Best Goalkeeper -->
+          <div class="card champion-card">
+            <div class="champion-badge-top">
+              <i class="fa-solid fa-award"></i>
+              <span>Best Goalkeeper</span>
+            </div>
+            <div class="img-container champion-img-container gallery-item" style="overflow: hidden; background: #000;">
+              <img src="images/BestGK.jpg" alt="Tournament Best Goalkeeper" loading="lazy" style="width: 100%; height: 100%; object-fit: contain;">
+              <div class="gallery-overlay"><i class="fa-solid fa-expand"></i></div>
+            </div>
+            <div class="card-info">
+              <span class="role-badge">Goalkeeper</span>
+              <h3>Best Goalkeeper</h3>
+              <p class="title">Guardian of the Net</p>
+            </div>
+          </div>
+
+          <!-- 10. Top Scorer -->
+          <div class="card champion-card">
+            <div class="champion-badge-top">
+              <i class="fa-solid fa-award"></i>
+              <span>Top Scorer</span>
+            </div>
+            <div class="img-container champion-img-container gallery-item" style="overflow: hidden; background: #000;">
+              <img src="images/BestScorer.jpg" alt="Tournament Top Scorer" loading="lazy" style="width: 100%; height: 100%; object-fit: contain;">
+              <div class="gallery-overlay"><i class="fa-solid fa-expand"></i></div>
+            </div>
+            <div class="card-info">
+              <span class="role-badge">Top Scorer</span>
+              <h3>Tournament Top Scorer</h3>
+              <p class="title">Clinical Finisher</p>
+            </div>
+          </div>
+
         </div>
       </div>
-
-      <!-- 2. Runner Up Manager -->
-      <div class="card champion-card">
-        <div class="champion-badge-top">
-          <i class="fa-solid fa-award"></i>
-          <span>Runner Up Manager</span>
-        </div>
-        <div class="img-container champion-img-container gallery-item" style="overflow: hidden; background: #000;">
-          <img src="images/RunnerUpManager.jpg" alt="Tournament Runner Up Manager" loading="lazy" style="width: 100%; height: 100%; object-fit: contain;">
-          <div class="gallery-overlay"><i class="fa-solid fa-expand"></i></div>
-        </div>
-        <div class="card-info">
-          <span class="role-badge">Runner Up Manager</span>
-          <h3>Tournament Runner Up Manager</h3>
-          <p class="title">Closest to Victory</p>
-        </div>
-      </div>
-
-      <!-- 3. Passing Football Manager -->
-      <div class="card champion-card">
-        <div class="champion-badge-top">
-          <i class="fa-solid fa-award"></i>
-          <span>Passing Football Manager</span>
-        </div>
-        <div class="img-container champion-img-container gallery-item" style="overflow: hidden; background: #000;">
-          <img src="images/PassingFootballManager.jpg" alt="Tournament Passing Football Manager" loading="lazy" style="width: 100%; height: 100%; object-fit: contain;">
-          <div class="gallery-overlay"><i class="fa-solid fa-expand"></i></div>
-        </div>
-        <div class="card-info">
-          <span class="role-badge">Passing Football Manager</span>
-          <h3>Tournament Passing Football Manager</h3>
-          <p class="title">Master of the Pass</p>
-        </div>
-      </div>
-
-      <!-- 4. Silent Manager -->
-      <div class="card champion-card">
-        <div class="champion-badge-top">
-          <i class="fa-solid fa-award"></i>
-          <span>Silent Manager</span>
-        </div>
-        <div class="img-container champion-img-container gallery-item" style="overflow: hidden; background: #000;">
-          <img src="images/SilentManager.jpg" alt="Tournament Silent Manager" loading="lazy" style="width: 100%; height: 100%; object-fit: contain;">
-          <div class="gallery-overlay"><i class="fa-solid fa-expand"></i></div>
-        </div>
-        <div class="card-info">
-          <span class="role-badge">Silent Manager</span>
-          <h3>Tournament Silent Manager</h3>
-          <p class="title">Unseen Strength</p>
-        </div>
-      </div>
-
-      <!-- 5. Best Captain -->
-      <div class="card champion-card">
-        <div class="champion-badge-top">
-          <i class="fa-solid fa-award"></i>
-          <span>Best Captain</span>
-        </div>
-        <div class="img-container champion-img-container gallery-item" style="overflow: hidden; background: #000;">
-          <img src="images/BestCaptain.jpg" alt="Tournament Best Captain - Aimon" loading="lazy" style="width: 100%; height: 100%; object-fit: contain;">
-          <div class="gallery-overlay"><i class="fa-solid fa-expand"></i></div>
-        </div>
-        <div class="card-info">
-          <span class="role-badge">Best Captain</span>
-          <h3>Tournament Best Captain</h3>
-          <p class="title">Aimon</p>
-        </div>
-      </div>
-
-      <!-- 6. Best Player -->
-      <div class="card champion-card">
-        <div class="champion-badge-top">
-          <i class="fa-solid fa-award"></i>
-          <span>Best Player</span>
-        </div>
-        <div class="img-container champion-img-container gallery-item" style="overflow: hidden; background: #000;">
-          <img src="images/bestPlayer.jpg" alt="Tournament Best Player" loading="lazy" style="width: 100%; height: 100%; object-fit: contain;">
-          <div class="gallery-overlay"><i class="fa-solid fa-expand"></i></div>
-        </div>
-        <div class="card-info">
-          <span class="role-badge">Best Player</span>
-          <h3>Tournament Best Player</h3>
-          <p class="title">Elite Performance</p>
-        </div>
-      </div>
-
-      <!-- 7. Best Defender -->
-      <div class="card champion-card">
-        <div class="champion-badge-top">
-          <i class="fa-solid fa-award"></i>
-          <span>Best Defender</span>
-        </div>
-        <div class="img-container champion-img-container gallery-item" style="overflow: hidden; background: #000;">
-          <img src="images/BestDefender.jpg" alt="Tournament Best Defender" loading="lazy" style="width: 100%; height: 100%; object-fit: contain;">
-          <div class="gallery-overlay"><i class="fa-solid fa-expand"></i></div>
-        </div>
-        <div class="card-info">
-          <span class="role-badge">Best Defender</span>
-          <h3>Tournament Best Defender</h3>
-          <p class="title">Defensive Wall</p>
-        </div>
-      </div>
-
-      <!-- 8. Best Young Player -->
-      <div class="card champion-card">
-        <div class="champion-badge-top">
-          <i class="fa-solid fa-award"></i>
-          <span>Best Young Player</span>
-        </div>
-        <div class="img-container champion-img-container gallery-item" style="overflow: hidden; background: #000;">
-          <img src="images/BestYoungPlayer.jpg" alt="Tournament Best Young Player" loading="lazy" style="width: 100%; height: 100%; object-fit: contain;">
-          <div class="gallery-overlay"><i class="fa-solid fa-expand"></i></div>
-        </div>
-        <div class="card-info">
-          <span class="role-badge">Young Star</span>
-          <h3>Best Young Player</h3>
-          <p class="title">Rising Talent</p>
-        </div>
-      </div>
-
-      <!-- 9. Best Goalkeeper -->
-      <div class="card champion-card">
-        <div class="champion-badge-top">
-          <i class="fa-solid fa-award"></i>
-          <span>Best Goalkeeper</span>
-        </div>
-        <div class="img-container champion-img-container gallery-item" style="overflow: hidden; background: #000;">
-          <img src="images/BestGK.jpg" alt="Tournament Best Goalkeeper" loading="lazy" style="width: 100%; height: 100%; object-fit: contain;">
-          <div class="gallery-overlay"><i class="fa-solid fa-expand"></i></div>
-        </div>
-        <div class="card-info">
-          <span class="role-badge">Goalkeeper</span>
-          <h3>Best Goalkeeper</h3>
-          <p class="title">Guardian of the Net</p>
-        </div>
-      </div>
-
-      <!-- 10. Top Scorer -->
-      <div class="card champion-card">
-        <div class="champion-badge-top">
-          <i class="fa-solid fa-award"></i>
-          <span>Top Scorer</span>
-        </div>
-        <div class="img-container champion-img-container gallery-item" style="overflow: hidden; background: #000;">
-          <img src="images/BestScorer.jpg" alt="Tournament Top Scorer" loading="lazy" style="width: 100%; height: 100%; object-fit: contain;">
-          <div class="gallery-overlay"><i class="fa-solid fa-expand"></i></div>
-        </div>
-        <div class="card-info">
-          <span class="role-badge">Top Scorer</span>
-          <h3>Tournament Top Scorer</h3>
-          <p class="title">Clinical Finisher</p>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-
-
+    </section>
 
     <section id="gallery" class="section">
       <div class="container">
@@ -815,7 +800,6 @@
           <h2>Match Gallery</h2>
         </div>
         
-      
         <div class="gallery-section-title" style="margin-bottom: 20px; color: var(--accent-gold); font-weight: 700;">
           <h3></h3>
         </div>
@@ -912,32 +896,19 @@
 
   </main>
 
-
-
-
-
-
-
-<!-- Admin Trigger & Login Modal -->
-<div style="text-align:center; padding: 20px;">
-  <button id="admin-login-btn" class="role-badge" style="cursor:pointer; background:var(--accent-gold); color:var(--bg-dark);">Admin Login</button>
-</div>
-
-<div id="admin-modal" class="lightbox" style="display:none;">
-  <div style="background:var(--bg-card); padding:30px; border-radius:10px; border:1px solid var(--border-color); width:300px; text-align:center;">
-    <h3 style="margin-bottom:15px; color:var(--text-main);">Admin Login</h3>
-    <input type="password" id="admin-pass" placeholder="Enter Password" style="width:100%; padding:10px; margin-bottom:15px; background:var(--bg-dark); border:1px solid var(--border-color); color:white; border-radius:5px;">
-    <button id="submit-login" class="role-badge" style="cursor:pointer; width:100%; padding:10px;">Login</button>
-    <p id="login-error" style="color:red; font-size:0.8rem; margin-top:10px; display:none;">Incorrect Password</p>
+  <!-- Admin Trigger & Login Modal -->
+  <div style="text-align:center; padding: 20px;">
+    <button id="admin-login-btn" class="role-badge" style="cursor:pointer; background:var(--accent-gold); color:var(--bg-dark);">Admin Login</button>
   </div>
-</div>
 
-
-
-
-
-
-
+  <div id="admin-modal" class="lightbox" style="display:none;">
+    <div style="background:var(--bg-card); padding:30px; border-radius:10px; border:1px solid var(--border-color); width:300px; text-align:center;">
+      <h3 style="margin-bottom:15px; color:var(--text-main);">Admin Login</h3>
+      <input type="password" id="admin-pass" placeholder="Enter Password" style="width:100%; padding:10px; margin-bottom:15px; background:var(--bg-dark); border:1px solid var(--border-color); color:white; border-radius:5px;">
+      <button id="submit-login" class="role-badge" style="cursor:pointer; width:100%; padding:10px;">Login</button>
+      <p id="login-error" style="color:red; font-size:0.8rem; margin-top:10px; display:none;">Incorrect Password</p>
+    </div>
+  </div>
 
   <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Image Preview">
     <span class="lightbox-close" id="lightbox-close">&times;</span>
