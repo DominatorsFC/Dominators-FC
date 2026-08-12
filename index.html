@@ -50,6 +50,32 @@
     ]
   }
   </script>
+
+
+  <!-- Firebase App SDK -->
+<script type="module">
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/12.17.1/firebase-app.js";
+  import { getFirestore, doc, setDoc, getDoc } from "https://www.gstatic.com/firebasejs/12.17.1/firebase-firestore.js";
+
+  const firebaseConfig = {
+    apiKey: "AIzaSyAWQKWxsBjmbH-mlVLK8V-1DJdnM-9V0U",
+    authDomain: "dominators-fc.firebaseapp.com",
+    projectId: "dominators-fc",
+    storageBucket: "dominators-fc.firebasestorage.app",
+    messagingSenderId: "782717927263",
+    appId: "1:782717927263:web:0c34e2e402e5e363f780ea",
+    measurementId: "G-RHQ2F7GTY5"
+  };
+
+  const app = initializeApp(firebaseConfig);
+  const db = getFirestore(app);
+
+  // গ্লোবালি ব্যবহারের জন্য উইন্ডোতে যুক্ত করা হলো
+  window.db = db;
+  window.firebaseFirestoreModules = { doc, setDoc, getDoc };
+</script>
+
+
 </head>
 <body>
 
@@ -885,6 +911,33 @@
     </section>
 
   </main>
+
+
+
+
+
+
+
+<!-- Admin Trigger & Login Modal -->
+<div style="text-align:center; padding: 20px;">
+  <button id="admin-login-btn" class="role-badge" style="cursor:pointer; background:var(--accent-gold); color:var(--bg-dark);">Admin Login</button>
+</div>
+
+<div id="admin-modal" class="lightbox" style="display:none;">
+  <div style="background:var(--bg-card); padding:30px; border-radius:10px; border:1px solid var(--border-color); width:300px; text-align:center;">
+    <h3 style="margin-bottom:15px; color:var(--text-main);">Admin Login</h3>
+    <input type="password" id="admin-pass" placeholder="Enter Password" style="width:100%; padding:10px; margin-bottom:15px; background:var(--bg-dark); border:1px solid var(--border-color); color:white; border-radius:5px;">
+    <button id="submit-login" class="role-badge" style="cursor:pointer; width:100%; padding:10px;">Login</button>
+    <p id="login-error" style="color:red; font-size:0.8rem; margin-top:10px; display:none;">Incorrect Password</p>
+  </div>
+</div>
+
+
+
+
+
+
+
 
   <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Image Preview">
     <span class="lightbox-close" id="lightbox-close">&times;</span>
