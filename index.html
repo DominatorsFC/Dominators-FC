@@ -34,7 +34,22 @@
   
   <link rel="stylesheet" href="style.css">
 
-  
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SportsTeam",
+    "name": "Dominators FC",
+    "alternateName": "Dominators Football Club",
+    "url": "https://dominatorsfc.github.io/Dominators-FC/",
+    "logo": "https://dominatorsfc.github.io/Dominators-FC/images/logo.jpg",
+    "sport": "Football",
+    "description": "Dominators FC - Dominating the pitch with passion, power, and precision.",
+    "sameAs": [
+      "https://www.facebook.com/share/1MN6wNtYWH/",
+      "https://www.instagram.com/dominators_.f.c"
+    ]
+  }
+ 
 </head>
 <body>
 
@@ -643,6 +658,43 @@
             </div>
           </div>
 
+
+           <div class="card champion-card">
+            <div class="champion-badge-top">
+              <i class="fa-solid fa-award"></i>
+              <span>One Army Kawser</span>
+            </div>
+            <div class="img-container champion-img-container gallery-item" style="overflow: hidden; background: #000;">
+              <img src="images/pic1.jpg" alt="Tournament Best Player" loading="lazy" style="width: 100%; height: 100%; object-fit: contain;">
+              <div class="gallery-overlay"><i class="fa-solid fa-expand"></i></div>
+            </div>
+            <div class="card-info">
+              <span class="role-badge">One Army Kawser</span>
+              <h3>Tournament Best Player</h3>
+              <p class="title">Kawser</p>
+            </div>
+          </div>
+
+
+           <div class="card champion-card">
+            <div class="champion-badge-top">
+              <i class="fa-solid fa-award"></i>
+              <span>Last time penalty</span>
+            </div>
+            <div class="img-container champion-img-container gallery-item" style="overflow: hidden; background: #000;">
+              <img src="images/pic2.jpg" alt="Tournament Best Player" loading="lazy" style="width: 100%; height: 100%; object-fit: contain;">
+              <div class="gallery-overlay"><i class="fa-solid fa-expand"></i></div>
+            </div>
+            <div class="card-info">
+              <span class="role-badge">Last time penalty</span>
+              <h3>Last time penalty</h3>
+              <p class="title">Ahsan</p>
+            </div>
+          </div>
+
+
+
+
           <div class="card champion-card">
             <div class="champion-badge-top">
               <i class="fa-solid fa-award"></i>
@@ -844,12 +896,12 @@
   </main>
 
   <div style="text-align:center; padding: 20px;">
-    <button id="admin-login-btn" class="role-badge" style="cursor:pointer; background:var(--accent-gold); color:var(--bg-dark);">Admin Login</button>
+    <button id="admin-login-btn" class="role-badge" style="cursor:pointer; background:var(--accent-gold); color:var(--bg-dark);">Admin Login(Disable)</button>
   </div>
 
   <div id="admin-modal" class="lightbox" style="display:none;">
     <div style="background:var(--bg-card); padding:30px; border-radius:10px; border:1px solid var(--border-color); width:300px; text-align:center;">
-      <h3 style="margin-bottom:15px; color:var(--text-main);">Admin Login(Disable)</h3>
+      <h3 style="margin-bottom:15px; color:var(--text-main);">Admin Login</h3>
       <input type="password" id="admin-pass" placeholder="Enter Password" style="width:100%; padding:10px; margin-bottom:15px; background:var(--bg-dark); border:1px solid var(--border-color); color:white; border-radius:5px;">
       <button id="submit-login" class="role-badge" style="cursor:pointer; width:100%; padding:10px;">Login</button>
       <p id="login-error" style="color:red; font-size:0.8rem; margin-top:10px; display:none;">Incorrect Password</p>
