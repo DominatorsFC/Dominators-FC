@@ -111,8 +111,6 @@ document.addEventListener('DOMContentLoaded', () => {
   const adminPass = document.getElementById('admin-pass');
   const loginError = document.getElementById('login-error');
 
-  const ADMIN_PASSWORD = 'admin123'; 
-
   if (sessionStorage.getItem('isAdmin') === 'true') {
     enableEditingMode();
   }
@@ -134,14 +132,30 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
+  // ফায়ারবেস ডেটাবেস থেকে সিক্রেট পাসওয়ার্ড চেক করার লগইন সিস্টেম
   if (submitLogin) {
-    submitLogin.addEventListener('click', () => {
-      if (adminPass && adminPass.value === ADMIN_PASSWORD) {
-        sessionStorage.setItem('isAdmin', 'true');
-        if (adminModal) adminModal.style.display = 'none';
-        enableEditingMode();
-      } else {
-        if (loginError) loginError.style.display = 'block';
+    submitLogin.addEventListener('click', async () => {
+      const enteredPass = adminPass ? adminPass.value : '';
+      try {
+        const { doc, getDoc } = window.firebaseFirestoreModules;
+        const docRef = doc(window.db, "settings", "admin");
+        const docSnap = await getDoc(docRef);
+        
+        let correctPass = 'admin123'; // ডিফল্ট ব্যাকআপ পাসওয়ার্ড
+        if (docSnap.exists()) {
+          correctPass = docSnap.data().password;
+        }
+
+        if (enteredPass === correctPass) {
+          sessionStorage.setItem('isAdmin', 'true');
+          if (adminModal) adminModal.style.display = 'none';
+          enableEditingMode();
+        } else {
+          if (loginError) loginError.style.display = 'block';
+        }
+      } catch (e) {
+        console.error("Login error:", e);
+        alert("Login failed due to connection error.");
       }
     });
   }
