@@ -1,0 +1,974 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dominators FC | Official Website</title>
+
+  <meta name="description" content="Official website of Dominators FC. Discover our squad leadership, management team, players, Featured Champions, and match gallery.">
+  <meta name="keywords" content="Dominators FC, Dominators Football Club, Dominators FC website, football club, local football tournament, Dominators FC Champions">
+  <meta name="author" content="Dominators FC">
+  <meta name="robots" content="index, follow">
+
+  <link rel="canonical" href="https://dominatorsfc.github.io/Dominators-FC/">
+
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://dominatorsfc.github.io/Dominators-FC/">
+  <meta property="og:title" content="Dominators FC | Official Website">
+  <meta property="og:description" content="Official website of Dominators FC. Discover our Featured Champions, management details, players, and match highlights.">
+  <meta property="og:image" content="https://dominatorsfc.github.io/Dominators-FC/images/logo.jpg">
+
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://dominatorsfc.github.io/Dominators-FC/">
+  <meta property="twitter:title" content="Dominators FC | Official Website">
+  <meta property="twitter:description" content="Official website of Dominators FC. Discover our Featured Champions, management details, players, and match highlights.">
+  <meta property="twitter:image" content="https://dominatorsfc.github.io/Dominators-FC/images/logo.jpg">
+
+  <link rel="icon" type="image/jpeg" href="images/logo.jpg">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer">
+  
+  <link rel="stylesheet" href="style.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SportsTeam",
+    "name": "Dominators FC",
+    "alternateName": "Dominators Football Club",
+    "url": "https://dominatorsfc.github.io/Dominators-FC/",
+    "logo": "https://dominatorsfc.github.io/Dominators-FC/images/logo.jpg",
+    "sport": "Football",
+    "description": "Dominators FC - Dominating the pitch with passion, power, and precision.",
+    "sameAs": [
+      "https://www.facebook.com/share/1MN6wNtYWH/",
+      "https://www.instagram.com/dominators_.f.c"
+    ]
+  }
+  </script>
+
+  <script type="module">
+    import { initializeApp } from "firebase/app";
+    import { getAnalytics } from "firebase/analytics";
+    import { getFirestore, doc, setDoc, getDoc } from "firebase/firestore";
+
+    const firebaseConfig = {
+      apiKey: "AIzaSyAWqKWXbsBjmHb-mlVlK8V-1DJdNM-9v0U",
+      authDomain: "dominators-fc.firebaseapp.com",
+      projectId: "dominators-fc",
+      storageBucket: "dominators-fc.firebasestorage.app",
+      messagingSenderId: "782717927263",
+      appId: "1:782717927263:web:0c34e2e402e5e363f780ea",
+      measurementId: "G-RHQ2F7GTY5"
+    };
+
+    const app = initializeApp(firebaseConfig);
+    const analytics = getAnalytics(app);
+    const db = getFirestore(app);
+
+    window.db = db;
+    window.firebaseFirestoreModules = { doc, setDoc, getDoc };
+  </script>
+</head>
+<body>
+
+  <header class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#" class="brand" aria-label="Dominators FC Home">
+        <img src="images/logo.jpg" alt="Dominators FC Logo" class="nav-logo">
+        <span class="club-name">DOMINATORS <span class="highlight">FC</span></span>
+      </a>
+
+      <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Toggle Navigation Menu">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+
+      <nav id="nav-menu" aria-label="Main Navigation">
+        <ul class="nav-links">
+          <li><a href="#hero" class="nav-item active">Home</a></li>
+          <li><a href="#about" class="nav-item">About</a></li>
+          <li><a href="#founders" class="nav-item">Founders</a></li>
+          <li><a href="#legendary-players" class="nav-item">Legends</a></li>
+          <li><a href="#champions" class="nav-item">Champions</a></li>
+          <li><a href="#tournament-awards" class="nav-item">Awards</a></li>
+          <li><a href="#management" class="nav-item">Management</a></li>
+          <li><a href="#players" class="nav-item">Players</a></li>
+          <li><a href="#volunteers" class="nav-item">Volunteers</a></li>
+          <li><a href="#kits" class="nav-item">Kits</a></li>
+          <li><a href="#permanent-teams" class="nav-item">Squad Lists</a></li>
+          <li><a href="#gallery" class="nav-item">Gallery</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="hero" class="hero">
+      <div class="hero-bg-glow"></div>
+      <div class="hero-bg-logo"></div>
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <div class="hero-logo-wrapper">
+          <img src="images/logo.jpg" alt="Dominators FC Logo" class="hero-logo glowing">
+          <div class="logo-ring-pulse"></div>
+        </div>
+        <span class="hero-badge"><i class="fa-solid fa-bolt"></i> Official Football Club</span>
+        <h1>DOMINATORS <span class="highlight-text">FC</span></h1>
+        <p>Dominating the pitch with passion, power, and precision.</p>
+      </div>
+      <div class="hero-scroll-indicator">
+        <span>Scroll Down</span>
+        <i class="fa-solid fa-chevron-down"></i>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="container text-center">
+        <span class="section-tag">WHO WE ARE</span>
+        <h2>About the Club</h2>
+        <p class="section-desc">
+          Dominators FC was founded on the principles of grit, teamwork, and relentless pursuit of victory. 
+          Whether on matchday or in training, we play to leave our mark on the field and set standards in local football.
+        </p>
+      </div>
+    </section>
+
+    <section id="founders" class="section dark-bg">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">VISIONARIES</span>
+          <h2>Club Founders</h2>
+          <p class="section-desc">The driving force behind the vision, culture, and establishment of Dominators FC.</p>
+        </div>
+        
+        <div class="card-grid col-3">
+          <div class="card">
+            <div class="img-container">
+              <img src="images/founder1_MohammadTahamidChowdhury.jpg" alt="Mohammad Tahamid Chowdhury - Founder" class="manager-photo" loading="lazy">
+            </div>
+            <div class="card-info">
+              <span class="role-badge">Founder</span>
+              <h3>Mohammad Tahamid Chowdhury</h3>
+              <p class="title">Founder</p>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="img-container">
+              <img src="images/founder2_TousifMostafaSaif.jpg" alt="Tousif Mostafa Saif - Founder" class="manager-photo" loading="lazy">
+            </div>
+            <div class="card-info">
+              <span class="role-badge">Founder</span>
+              <h3>Tousif Mostafa Saif</h3>
+              <p class="title">Founder</p>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="img-container">
+              <img src="images/founder3_MdFarhanSadikAlam.jpg" alt="Md Farhan Sadik Alam - Founder" class="manager-photo" loading="lazy">
+            </div>
+            <div class="card-info">
+              <span class="role-badge">Founder</span>
+              <h3>Md Farhan Sadik Alam</h3>
+              <p class="title">Founder</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="legendary-players" class="section dark-bg">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">HALL OF FAME</span>
+          <h2>Legendary Players</h2>
+          <p class="section-desc">Honoring the icons who have left an indelible legacy at Dominators FC.</p>
+        </div>
+        
+        <div class="single-card-wrapper" style="max-width: 900px;">
+          <div class="card feature-card">
+            <div class="img-container gallery-item" style="height: 550px; background-color: var(--bg-card); cursor: pointer; position: relative;">
+              <img src="images/legendaryPlayers.jpg" alt="Dominators FC Legendary Players" class="manager-photo" style="object-fit: contain; width: 100%; height: 100%;" loading="lazy">
+              <div class="gallery-overlay"><i class="fa-solid fa-expand"></i></div>
+            </div>
+            <div class="card-info">
+              <span class="role-badge">Legendary Squad</span>
+              <h3>Club Legends</h3>
+              <p class="title">Dominators FC Icons</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+   
+    <section id="management" class="section dark-bg">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">LEADERSHIP</span>
+          <h2>Club Management</h2>
+        </div>
+        
+        <div class="card-grid col-4">
+          <div class="card">
+            <div class="img-container">
+              <img src="images/Team_A_Manager_MohammaedZiaUddin.jpg" alt="Mohammaed Zia Uddin - Team A Manager" class="manager-photo" loading="lazy">
+            </div>
+            <div class="card-info">
+              <span class="role-badge">Team A</span>
+              <h3>Mohammad Zia Uddin</h3>
+              <p class="title">Manager</p>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="img-container">
+              <img src="images/Team_B_Manager_FarhanSadik.jpg" alt="Farhan Sadik - Team B Manager" class="manager-photo" loading="lazy">
+            </div>
+            <div class="card-info">
+              <span class="role-badge">Team B</span>
+              <h3>Md Farhan Sadik Alam</h3>
+              <p class="title">Manager</p>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="img-container">
+              <img src="images/Team_C_Manager_MohammadZiaurRahman.jpg" alt="Mohammad Ziaur Rahman - Team C Manager" class="manager-photo" loading="lazy">
+            </div>
+            <div class="card-info">
+              <span class="role-badge">Team C</span>
+              <h3>Mohammad Ziaur Rahman</h3>
+              <p class="title">Manager</p>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="img-container">
+              <img src="images/Team_D_Manager_MohammadEtihad.jpg" alt="Mohammad Etihad - Team D Manager" class="manager-photo" loading="lazy">
+            </div>
+            <div class="card-info">
+              <span class="role-badge">Team D</span>
+              <h3>Mohammad Etihad</h3>
+              <p class="title">Manager</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="players" class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">THE SQUAD</span>
+          <h2>Featured Players</h2>
+          <p class="section-desc">Meet the stars powering Dominators FC on the pitch.</p>
+        </div>
+
+        <div class="card-grid player-grid">
+          <div class="card player-card">
+            <div class="img-container">
+              <img src="images/forhan.jpg" alt="Forhan - Dominators FC Player" class="manager-photo" loading="lazy">
+            </div>
+            <div class="card-info">
+              <span class="role-badge player-badge">Player</span>
+              <h3>Forhan</h3>
+              <p class="title">Dominators FC</p>
+            </div>
+          </div>
+
+          <div class="card player-card">
+            <div class="img-container">
+              <img src="images/rafsan.jpg" alt="Rafsan - Dominators FC Player" class="manager-photo" loading="lazy">
+            </div>
+            <div class="card-info">
+              <span class="role-badge player-badge">Player</span>
+              <h3>Rafsan</h3>
+              <p class="title">Dominators FC</p>
+            </div>
+          </div>
+
+          <div class="card player-card">
+            <div class="img-container">
+              <img src="images/shihab.jpg" alt="Shihab - Dominators FC Player" class="manager-photo" loading="lazy">
+            </div>
+            <div class="card-info">
+              <span class="role-badge player-badge">Player</span>
+              <h3>Shihab</h3>
+              <p class="title">Dominators FC</p>
+            </div>
+          </div>
+
+          <div class="card player-card">
+            <div class="img-container">
+              <img src="images/aimon.jpg" alt="Aimon - Dominators FC Player" class="manager-photo" loading="lazy">
+            </div>
+            <div class="card-info">
+              <span class="role-badge player-badge">Player</span>
+              <h3>Aimon</h3>
+              <p class="title">Dominators FC</p>
+            </div>
+          </div>
+
+          <div class="card player-card">
+            <div class="img-container">
+              <img src="images/nill.jpg" alt="Nill - Dominators FC Player" class="manager-photo" loading="lazy">
+            </div>
+            <div class="card-info">
+              <span class="role-badge player-badge">Player</span>
+              <h3>Nill</h3>
+              <p class="title">Dominators FC</p>
+            </div>
+          </div>
+
+          <div class="card player-card">
+            <div class="img-container">
+              <img src="images/ashraful.jpg" alt="Ashraful - Dominators FC Player" class="manager-photo" loading="lazy">
+            </div>
+            <div class="card-info">
+              <span class="role-badge player-badge">Player</span>
+              <h3>Ashraful</h3>
+              <p class="title">Dominators FC</p>
+            </div>
+          </div>
+
+          <div class="card player-card">
+            <div class="img-container">
+              <img src="images/jawad.jpg" alt="Jawad - Dominators FC Player" class="manager-photo" loading="lazy">
+            </div>
+            <div class="card-info">
+              <span class="role-badge player-badge">Player</span>
+              <h3>Jawad</h3>
+              <p class="title">Dominators FC</p>
+            </div>
+          </div>
+
+          <div class="card player-card">
+            <div class="img-container">
+              <img src="images/araf.jpg" alt="Araf - Dominators FC Player" class="manager-photo" loading="lazy">
+            </div>
+            <div class="card-info">
+              <span class="role-badge player-badge">Player</span>
+              <h3>Araf</h3>
+              <p class="title">Dominators FC</p>
+            </div>
+          </div>
+
+          <div class="card player-card">
+            <div class="img-container">
+              <img src="images/rafid.jpg" alt="Rafid - Dominators FC Player" class="manager-photo" loading="lazy">
+            </div>
+            <div class="card-info">
+              <span class="role-badge player-badge">Player</span>
+              <h3>Rafid</h3>
+              <p class="title">Dominators FC</p>
+            </div>
+          </div>
+
+          <div class="card player-card">
+            <div class="img-container">
+              <img src="images/raihan.jpg" alt="Raihan - Dominators FC Player" class="manager-photo" loading="lazy">
+            </div>
+            <div class="card-info">
+              <span class="role-badge player-badge">Player</span>
+              <h3>Raihan</h3>
+              <p class="title">Dominators FC</p>
+            </div>
+          </div>
+
+          <div class="card player-card">
+            <div class="img-container">
+              <img src="images/imran.jpg" alt="Imran - Dominators FC Player" class="manager-photo" loading="lazy">
+            </div>
+            <div class="card-info">
+              <span class="role-badge player-badge">Player</span>
+              <h3>Imran</h3>
+              <p class="title">Dominators FC</p>
+            </div>
+          </div>
+
+          <div class="card player-card">
+            <div class="img-container">
+              <img src="images/sabbir.jpg" alt="Sabbir - Dominators FC Player" class="manager-photo" loading="lazy">
+            </div>
+            <div class="card-info">
+              <span class="role-badge player-badge">Player</span>
+              <h3>Sabbir</h3>
+              <p class="title">Dominators FC</p>
+            </div>
+          </div>
+
+          <div class="card player-card">
+            <div class="img-container">
+              <img src="images/arman.jpg" alt="Arman - Dominators FC Player" class="manager-photo" loading="lazy">
+            </div>
+            <div class="card-info">
+              <span class="role-badge player-badge">Player</span>
+              <h3>Arman</h3>
+              <p class="title">Dominators FC</p>
+            </div>
+          </div>
+
+          <div class="card player-card">
+            <div class="img-container">
+              <img src="images/kawsar.jpg" alt="Kawsar - Dominators FC Player" class="manager-photo" loading="lazy">
+            </div>
+            <div class="card-info">
+              <span class="role-badge player-badge">Player</span>
+              <h3>Kawsar</h3>
+              <p class="title">Dominators FC</p>
+            </div>
+          </div>
+
+          <div class="card player-card">
+            <div class="img-container">
+              <img src="images/arefin.jpg" alt="Arefin - Dominators FC Player" class="manager-photo" loading="lazy">
+            </div>
+            <div class="card-info">
+              <span class="role-badge player-badge">Player</span>
+              <h3>Arefin</h3>
+              <p class="title">Dominators FC</p>
+            </div>
+          </div>
+
+          <div class="card player-card">
+            <div class="img-container">
+              <img src="images/taisir.jpg" alt="Taisir - Dominators FC Player" class="manager-photo" loading="lazy">
+            </div>
+            <div class="card-info">
+              <span class="role-badge player-badge">Player</span>
+              <h3>Taisir</h3>
+              <p class="title">Dominators FC</p>
+            </div>
+          </div>
+
+          <div class="card player-card">
+            <div class="img-container">
+              <img src="images/tanzim.jpg" alt="Tanzim - Dominators FC Player" class="manager-photo" loading="lazy">
+            </div>
+            <div class="card-info">
+              <span class="role-badge player-badge">Player</span>
+              <h3>Tanzim</h3>
+              <p class="title">Dominators FC</p>
+            </div>
+          </div>
+
+          <div class="card player-card">
+            <div class="img-container">
+              <img src="images/asif.jpg" alt="Asif - Dominators FC Player" class="manager-photo" loading="lazy">
+            </div>
+            <div class="card-info">
+              <span class="role-badge player-badge">Player</span>
+              <h3>Asif</h3>
+              <p class="title">Dominators FC</p>
+            </div>
+          </div>
+
+          <div class="card player-card">
+            <div class="img-container">
+              <img src="images/arafjr.jpg" alt="Araf Jr. - Dominators FC Player" class="manager-photo" loading="lazy">
+            </div>
+            <div class="card-info">
+              <span class="role-badge player-badge">Player</span>
+              <h3>Araf Jr.</h3>
+              <p class="title">Dominators FC</p>
+            </div>
+          </div>
+
+          <div class="card player-card">
+            <div class="img-container">
+              <img src="images/shefat.jpg" alt="Shefat - Dominators FC Player" class="manager-photo" loading="lazy">
+            </div>
+            <div class="card-info">
+              <span class="role-badge">RB</span>
+              <h3>Shefat</h3>
+              <p class="title">Dominators FC</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="focus-function" class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Design & Development</span>
+          <h2>Focus & Function</h2>
+          <p class="section-desc">Crafting Websites & Capturing Moments.</p>
+        </div>
+        
+        <div class="single-card-wrapper">
+          <div class="card feature-card">
+            <div class="img-container focus-function-container">
+              <img src="images/FocusFunction_ShadmanSharif.jpg" alt="Shadman Sharif - Focus & Function Lead" class="manager-photo focus-function-img" loading="lazy">
+            </div>
+            <div class="card-info">
+              <span class="role-badge">Focus & Function</span>
+              <h3>MD Sharif Bin Aziz Shadman</h3>
+              <p class="title">Focus & Function Lead</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="volunteers" class="section dark-bg">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">BACKSTAGE SUPPORT</span>
+          <h2>Volunteers</h2>
+          <p class="section-desc">The dedicated individuals powering club operations behind the scenes.</p>
+        </div>
+        
+        <div class="single-card-wrapper">
+          <div class="card feature-card">
+            <div class="img-container fit-contain">
+              <img src="images/volunteers.jpg" alt="Dominators FC Volunteers Team" class="manager-photo" loading="lazy">
+            </div>
+            <div class="card-info">
+              <span class="role-badge">Support Crew</span>
+              <h3>Club Volunteers</h3>
+              <p class="title">Dominators FC Operations</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="kits" class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">GEAR</span>
+          <h2>Official Kits</h2>
+          <p class="section-desc">Official team jersey designs for the matches.</p>
+        </div>
+        
+        <div class="single-card-wrapper">
+          <div class="card feature-card">
+            <div class="img-container fit-contain">
+              <img src="images/kits.jpg" alt="Dominators FC Official Kits" class="manager-photo" loading="lazy">
+            </div>
+            <div class="card-info">
+              <span class="role-badge">Official Kit</span>
+              <h3>Team Jersey</h3>
+              <p class="title">Dominators FC Apparel</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="champions" class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">HALL OF GLORY</span>
+          <h2>Featured Champions</h2>
+          <p class="section-desc">
+            Celebrating the elite teams that conquered the pitch and lifted the trophy in our tournament seasons.
+          </p>
+        </div>
+        
+        <div class="card-grid col-2">
+          <div class="card champion-card">
+            <div class="champion-badge-top">
+              <i class="fa-solid fa-trophy"></i>
+              <span>Season 1 Champion</span>
+            </div>
+            <div class="img-container champion-img-container">
+              <img src="images/ses1Champions.jpg" alt="Tournament Season 1 Champions" class="manager-photo" loading="lazy">
+            </div>
+            <div class="card-info">
+              <span class="role-badge">Season 1 Winner</span>
+              <h3>Tournament Season 1 Champions</h3>
+              <p class="title">Dominating the inaugural campaign</p>
+            </div>
+          </div>
+
+          <div class="card champion-card">
+            <div class="champion-badge-top">
+              <i class="fa-solid fa-trophy"></i>
+              <span>Season 2 Champion</span>
+            </div>
+            <div class="img-container champion-img-container">
+              <img src="images/ses2Champions.jpg" alt="Tournament Season 2 Champions" class="manager-photo" loading="lazy">
+            </div>
+            <div class="card-info">
+              <span class="role-badge">Season 2 Winner</span>
+              <h3>Tournament Season 2 Champions</h3>
+              <p class="title">Crown jewel of the latest tournament</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="tournament-awards" class="section dark-bg">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">INDIVIDUAL HONORS</span>
+          <h2>Tournament Awards & Honors</h2>
+          <p class="section-desc">
+            Recognizing the standout individual brilliance and exceptional performances across our tournament seasons.
+          </p>
+        </div>
+
+        <div class="card-grid col-3">
+          <div class="card champion-card">
+            <div class="champion-badge-top">
+              <i class="fa-solid fa-award"></i>
+              <span>Champion Manager</span>
+            </div>
+            <div class="img-container champion-img-container gallery-item" style="overflow: hidden; background: #000;">
+              <img src="images/ChampionManager.jpg" alt="Tournament Champion Manager" loading="lazy" style="width: 100%; height: 100%; object-fit: contain;">
+              <div class="gallery-overlay"><i class="fa-solid fa-expand"></i></div>
+            </div>
+            <div class="card-info">
+              <span class="role-badge">Champion Manager</span>
+              <h3>Tournament Champion Manager</h3>
+              <p class="title">Leading the charge to victory</p>
+            </div>
+          </div>
+
+          <div class="card champion-card">
+            <div class="champion-badge-top">
+              <i class="fa-solid fa-award"></i>
+              <span>Runner Up Manager</span>
+            </div>
+            <div class="img-container champion-img-container gallery-item" style="overflow: hidden; background: #000;">
+              <img src="images/RunnerUpManager.jpg" alt="Tournament Runner Up Manager" loading="lazy" style="width: 100%; height: 100%; object-fit: contain;">
+              <div class="gallery-overlay"><i class="fa-solid fa-expand"></i></div>
+            </div>
+            <div class="card-info">
+              <span class="role-badge">Runner Up Manager</span>
+              <h3>Tournament Runner Up Manager</h3>
+              <p class="title">Closest to Victory</p>
+            </div>
+          </div>
+
+          <div class="card champion-card">
+            <div class="champion-badge-top">
+              <i class="fa-solid fa-award"></i>
+              <span>Passing Football Manager</span>
+            </div>
+            <div class="img-container champion-img-container gallery-item" style="overflow: hidden; background: #000;">
+              <img src="images/PassingFootballManager.jpg" alt="Tournament Passing Football Manager" loading="lazy" style="width: 100%; height: 100%; object-fit: contain;">
+              <div class="gallery-overlay"><i class="fa-solid fa-expand"></i></div>
+            </div>
+            <div class="card-info">
+              <span class="role-badge">Passing Football Manager</span>
+              <h3>Tournament Passing Football Manager</h3>
+              <p class="title">Master of the Pass</p>
+            </div>
+          </div>
+
+          <div class="card champion-card">
+            <div class="champion-badge-top">
+              <i class="fa-solid fa-award"></i>
+              <span>Silent Manager</span>
+            </div>
+            <div class="img-container champion-img-container gallery-item" style="overflow: hidden; background: #000;">
+              <img src="images/SilentManager.jpg" alt="Tournament Silent Manager" loading="lazy" style="width: 100%; height: 100%; object-fit: contain;">
+              <div class="gallery-overlay"><i class="fa-solid fa-expand"></i></div>
+            </div>
+            <div class="card-info">
+              <span class="role-badge">Silent Manager</span>
+              <h3>Tournament Silent Manager</h3>
+              <p class="title">Unseen Strength</p>
+            </div>
+          </div>
+
+
+           <div class="card champion-card">
+            <div class="champion-badge-top">
+              <i class="fa-solid fa-award"></i>
+              <span>One Army Kawser</span>
+            </div>
+            <div class="img-container champion-img-container gallery-item" style="overflow: hidden; background: #000;">
+              <img src="images/pic1.jpg" alt="Tournament Best Player" loading="lazy" style="width: 100%; height: 100%; object-fit: contain;">
+              <div class="gallery-overlay"><i class="fa-solid fa-expand"></i></div>
+            </div>
+            <div class="card-info">
+              <span class="role-badge">One Army Kawser</span>
+              <h3>Tournament Best Player</h3>
+              <p class="title">Kawser</p>
+            </div>
+          </div>
+
+
+           <div class="card champion-card">
+            <div class="champion-badge-top">
+              <i class="fa-solid fa-award"></i>
+              <span>Last time penalty</span>
+            </div>
+            <div class="img-container champion-img-container gallery-item" style="overflow: hidden; background: #000;">
+              <img src="images/pic2.jpg" alt="Tournament Best Player" loading="lazy" style="width: 100%; height: 100%; object-fit: contain;">
+              <div class="gallery-overlay"><i class="fa-solid fa-expand"></i></div>
+            </div>
+            <div class="card-info">
+              <span class="role-badge">Last time penalty</span>
+              <h3>Last time penalty</h3>
+              <p class="title">Ahsan</p>
+            </div>
+          </div>
+
+
+
+
+          <div class="card champion-card">
+            <div class="champion-badge-top">
+              <i class="fa-solid fa-award"></i>
+              <span>Best Captain</span>
+            </div>
+            <div class="img-container champion-img-container gallery-item" style="overflow: hidden; background: #000;">
+              <img src="images/BestCaptain.jpg" alt="Tournament Best Captain - Aimon" loading="lazy" style="width: 100%; height: 100%; object-fit: contain;">
+              <div class="gallery-overlay"><i class="fa-solid fa-expand"></i></div>
+            </div>
+            <div class="card-info">
+              <span class="role-badge">Best Captain</span>
+              <h3>Tournament Best Captain</h3>
+              <p class="title">Aimon</p>
+            </div>
+          </div>
+
+          <div class="card champion-card">
+            <div class="champion-badge-top">
+              <i class="fa-solid fa-award"></i>
+              <span>Best Player</span>
+            </div>
+            <div class="img-container champion-img-container gallery-item" style="overflow: hidden; background: #000;">
+              <img src="images/bestPlayer.jpg" alt="Tournament Best Player" loading="lazy" style="width: 100%; height: 100%; object-fit: contain;">
+              <div class="gallery-overlay"><i class="fa-solid fa-expand"></i></div>
+            </div>
+            <div class="card-info">
+              <span class="role-badge">Best Player</span>
+              <h3>Tournament Best Player</h3>
+              <p class="title">Elite Performance</p>
+            </div>
+          </div>
+
+          <div class="card champion-card">
+            <div class="champion-badge-top">
+              <i class="fa-solid fa-award"></i>
+              <span>Best Defender</span>
+            </div>
+            <div class="img-container champion-img-container gallery-item" style="overflow: hidden; background: #000;">
+              <img src="images/BestDefender.jpg" alt="Tournament Best Defender" loading="lazy" style="width: 100%; height: 100%; object-fit: contain;">
+              <div class="gallery-overlay"><i class="fa-solid fa-expand"></i></div>
+            </div>
+            <div class="card-info">
+              <span class="role-badge">Best Defender</span>
+              <h3>Tournament Best Defender</h3>
+              <p class="title">Defensive Wall</p>
+            </div>
+          </div>
+
+          <div class="card champion-card">
+            <div class="champion-badge-top">
+              <i class="fa-solid fa-award"></i>
+              <span>Best Young Player</span>
+            </div>
+            <div class="img-container champion-img-container gallery-item" style="overflow: hidden; background: #000;">
+              <img src="images/BestYoungPlayer.jpg" alt="Tournament Best Young Player" loading="lazy" style="width: 100%; height: 100%; object-fit: contain;">
+              <div class="gallery-overlay"><i class="fa-solid fa-expand"></i></div>
+            </div>
+            <div class="card-info">
+              <span class="role-badge">Young Star</span>
+              <h3>Best Young Player</h3>
+              <p class="title">Rising Talent</p>
+            </div>
+          </div>
+
+          <div class="card champion-card">
+            <div class="champion-badge-top">
+              <i class="fa-solid fa-award"></i>
+              <span>Best Goalkeeper</span>
+            </div>
+            <div class="img-container champion-img-container gallery-item" style="overflow: hidden; background: #000;">
+              <img src="images/BestGK.jpg" alt="Tournament Best Goalkeeper" loading="lazy" style="width: 100%; height: 100%; object-fit: contain;">
+              <div class="gallery-overlay"><i class="fa-solid fa-expand"></i></div>
+            </div>
+            <div class="card-info">
+              <span class="role-badge">Goalkeeper</span>
+              <h3>Best Goalkeeper</h3>
+              <p class="title">Guardian of the Net</p>
+            </div>
+          </div>
+
+          <div class="card champion-card">
+            <div class="champion-badge-top">
+              <i class="fa-solid fa-award"></i>
+              <span>Top Scorer</span>
+            </div>
+            <div class="img-container champion-img-container gallery-item" style="overflow: hidden; background: #000;">
+              <img src="images/BestScorer.jpg" alt="Tournament Top Scorer" loading="lazy" style="width: 100%; height: 100%; object-fit: contain;">
+              <div class="gallery-overlay"><i class="fa-solid fa-expand"></i></div>
+            </div>
+            <div class="card-info">
+              <span class="role-badge">Top Scorer</span>
+              <h3>Tournament Top Scorer</h3>
+              <p class="title">Clinical Finisher</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section id="gallery" class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">MEDIA</span>
+          <h2>Match Gallery</h2>
+        </div>
+        
+        <div class="gallery-grid" style="margin-bottom: 40px;">
+          <div class="gallery-item">
+            <img src="images/gallery1.jpg" alt="Dominators FC Gallery Section 1 Photo 1" loading="lazy">
+            <div class="gallery-overlay"><i class="fa-solid fa-expand"></i></div>
+          </div>
+          <div class="gallery-item">
+            <img src="images/gallery2.jpg" alt="Dominators FC Gallery Section 1 Photo 2" loading="lazy">
+            <div class="gallery-overlay"><i class="fa-solid fa-expand"></i></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="permanent-teams" class="section dark-bg">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">ROSTER</span>
+          <h2>Permanent Squad Teams</h2>
+          <p class="section-desc">Official player rosters across squad divisions.</p>
+        </div>
+
+        <div class="squad-tables-grid col-3-squads">
+          <div class="squad-box">
+            <div class="squad-header">
+              <img src="images/logo.jpg" alt="Dominators FC Icon" class="squad-logo-icon">
+              <h3>Dominators FC A Team</h3>
+            </div>
+            <ol>
+              <li>Tahamid</li>
+              <li>Tousif</li>
+              <li>Farhan</li>
+              <li>Shatil</li>
+              <li>Fahad</li>
+              <li>Zia</li>
+              <li>Anil</li>
+              <li>Opu</li>
+              <li>Rabby</li>
+              <li>Afif</li>
+              <li>Mehedi</li>
+              <li>Anik</li>
+              <li>Najat</li>
+            </ol>
+          </div>
+
+          <div class="squad-box">
+            <div class="squad-header">
+              <img src="images/logo.jpg" alt="Dominators FC Icon" class="squad-logo-icon">
+              <h3>Dominators FC B Team</h3>
+            </div>
+            <ol>
+              <li>Sabbir</li>
+              <li>Aimon</li>
+              <li>Kawser</li>
+              <li>Tanzim</li>
+              <li>Asif</li>
+              <li>Rafsan</li>
+              <li>Taisir</li>
+              <li>Forhan</li>
+              <li>Shihab</li>
+              <li>Arman</li>
+              <li>Tareq</li>
+              <li>Mohim</li>
+            </ol>
+          </div>
+
+          <div class="squad-box">
+            <div class="squad-header">
+              <img src="images/logo.jpg" alt="Dominators FC Icon" class="squad-logo-icon">
+              <h3>Dominators FC C Team</h3>
+            </div>
+            <ol>
+              <li>Arefin</li>
+              <li>Ashraful</li>
+              <li>Imran</li>
+              <li>Shefat</li>
+              <li>Raihan</li>
+              <li>Araf</li>
+              <li>Nill</li>
+              <li>Jawad</li>
+              <li>Abrar</li>
+              <li>Rafid</li>
+              <li>Walid</li>
+              <li>Abrar Jr</li>
+              <li>Safeer</li>
+              <li>Newaz</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <div style="text-align:center; padding: 20px;">
+    <button id="admin-login-btn" class="role-badge" style="cursor:pointer; background:var(--accent-gold); color:var(--bg-dark);">Admin Login</button>
+  </div>
+
+  <div id="admin-modal" class="lightbox" style="display:none;">
+    <div style="background:var(--bg-card); padding:30px; border-radius:10px; border:1px solid var(--border-color); width:300px; text-align:center;">
+      <h3 style="margin-bottom:15px; color:var(--text-main);">Admin Login</h3>
+      <input type="password" id="admin-pass" placeholder="Enter Password" style="width:100%; padding:10px; margin-bottom:15px; background:var(--bg-dark); border:1px solid var(--border-color); color:white; border-radius:5px;">
+      <button id="submit-login" class="role-badge" style="cursor:pointer; width:100%; padding:10px;">Login</button>
+      <p id="login-error" style="color:red; font-size:0.8rem; margin-top:10px; display:none;">Incorrect Password</p>
+    </div>
+  </div>
+
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Image Preview">
+    <span class="lightbox-close" id="lightbox-close">&times;</span>
+    <img class="lightbox-content" id="lightbox-img" alt="Gallery Preview">
+  </div>
+
+  <footer class="footer">
+    <div class="footer-container-simple">
+      <div class="footer-col brand-col">
+        <div class="footer-brand">
+          <img src="images/logo.jpg" alt="Dominators FC Logo" class="footer-logo">
+          <h3>DOMINATORS <span class="highlight">FC</span></h3>
+        </div>
+        <p class="footer-tagline">Dominating the pitch with passion, power, and precision.</p>
+        <div class="social-links">
+          <a href="https://www.facebook.com/share/1MN6wNtYWH/" target="_blank" rel="noopener noreferrer" aria-label="Facebook" class="social-icon">
+            <i class="fa-brands fa-facebook-f"></i>
+          </a>
+          <a href="https://www.instagram.com/dominators_.f.c?igsh=bHgzbms3anFpOHY2" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="social-icon">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-col info-col">
+        <h4>Club Info</h4>
+        <ul class="info-list">
+          <li><i class="fa-solid fa-trophy"></i> <span>Featured Champions / S1 & S2</span></li>
+          <li><i class="fa-solid fa-shield-halved"></i> <span>Active Squads (A-C)</span></li>
+          <li><i class="fa-solid fa-bolt"></i> <span>Passion & Power</span></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2026 Dominators FC. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
