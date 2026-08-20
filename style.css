@@ -874,3 +874,20 @@ ul, ol {
     height: 130px;
   }
 }
+
+
+.footer-credit {
+    text-align: center;
+    flex: 1;
+}
+
+.footer-credit a {
+    color: #fff;
+    font-weight: 600;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+.footer-credit a:hover {
+    color: #d4af37;
+}
