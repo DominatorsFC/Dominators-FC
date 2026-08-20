@@ -875,6 +875,9 @@ ul, ol {
   }
 }
 
+.footer-copyright {
+    flex: 1;
+}
 
 .footer-credit {
     text-align: center;
